@@ -43,26 +43,26 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
             <li class="mb-1 ml-4">
               I provide boutique marketing services for B2B tech companies.
             </li>
-            <p class="text-muted-foreground mb-6 text-sm">
-              In my free time, I paddle for a competitive dragon boat team &
-              join CrossFit. I also love dabbling in home labbing, and
-              experiment with web-dev technology & productivity tools.
-            </p>
           </ul>
-            <div class="flex justify-center">
-              <Link
-                href="mailto:Jotham@cothink.ing"
-                class={buttonVariants({
-                  variant: 'secondary',
-                }) + ' group'}
+          <p class="text-muted-foreground mb-6 text-sm">
+            In my free time, I paddle for a competitive dragon boat team & join
+            CrossFit. I also love dabbling in home labbing, and experiment with
+            web-dev technology & productivity tools.
+          </p>
+          <div class="flex justify-center">
+            <Link
+              href="mailto:Jotham@cothink.ing"
+              class={buttonVariants({
+                variant: 'secondary',
+              }) + ' group'}
+            >
+              Let's get in touch <span
+                class="ml-1.5 transition-transform group-hover:translate-x-1"
               >
-                Let's get in touch <span
-                  class="ml-1.5 transition-transform group-hover:translate-x-1"
-                >
-                  <Icon name="lucide:mail" class="size-4" />
-                </span>
-              </Link>
-            </div>
+                <Icon name="lucide:mail" class="size-4" />
+              </span>
+            </Link>
+          </div>
         </p>
       </div>
     </div>
