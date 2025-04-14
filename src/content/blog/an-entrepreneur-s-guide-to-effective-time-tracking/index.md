@@ -160,7 +160,7 @@ The app comes with a great tagging and goal system, which replaces the “client
 
 It is also the only app I’ve found so far that makes full use of the horizontal and vertical rows of my phone screen space — with the vertical axis being the hours and the horizontal axis being the minutes in said hour. A quick glance at the colours on screen is a good way of telling how much time is spent on a given day. This is different from a typical calendar, where a short 15-minute duration is just a tiny slither on screen.
 
-![37881930142093a1cfbc44b680fe6cc1_MD5](_37881930142093a1cfbc44b680fe6cc1_MD5.gif)
+![37881930142093a1cfbc44b680fe6cc1_MD5](edited.gif)
 
 In fact, I find ATracker’s report functionality relatively more robust than other tools I found — you can easily filter reports by duration, date, tasks, tags, and goals. Another cool feature I rarely find elsewhere is the ability to track occurrences in addition to duration captured — which is great for users who want to track, say, how many times they spent reviewing emails a day.
 
