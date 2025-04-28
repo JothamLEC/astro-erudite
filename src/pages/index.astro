@@ -14,23 +14,38 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
 <Layout>
   <PageHead slot="head" title="Home" />
   <section>
-    <div class="rounded-lg border">
+    <div
+      class="ring-muted-foreground/20 rounded-lg shadow-lg ring-1 shadow-zinc-500/20"
+    >
       <div class="flex flex-col space-y-1.5 p-6">
-        <h3 class="text-3xl leading-none font-medium">Jotham . Lim</h3>
-        <p class="text-muted-foreground text-sm">
-          Digital Marketing Engineer | HealthyGamer Coach
+        <h3 class="text-4xl leading-12 font-extrabold">
+          Hi, I'm Jotham Lim 👋
+        </h3>
+        <p class="text-muted-foreground max-w-[40ch] text-xl">
+          Journalist turned Digital Marketing Engineer.
         </p>
+        <hr class="mt-4" />
       </div>
       <div class="p-6 pt-0">
         <p class="text-muted-foreground mb-2 text-sm">
-          Welcome to my personal website.
           <ul class="text-muted-foreground mb-4 list-disc text-sm">
             <li class="mb-1 ml-4">
-              I am the Head of Marketing for a regional AI fraud prevention
-              company.
+              Providing
+              <Link
+                href="https://cothink.ing"
+                class="text-foreground"
+                underline
+                external
+              >
+                Marketing Engineering Services
+              </Link>
+              for B2B tech companies.
             </li>
             <li class="mb-1 ml-4">
-              I work part-time as a mental health/career coach for
+              Head of Marketing for a regional AI fraud prevention company.
+            </li>
+            <li class="mb-1 ml-4">
+              Work part-time as a mental health/career coach for
               <Link
                 href="https://www.healthygamer.gg"
                 class="text-foreground"
@@ -40,54 +55,52 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
                 HealthyGamer.gg</Link
               >.
             </li>
-            <li class="mb-1 ml-4">
-              I provide boutique marketing services for B2B tech companies.
-            </li>
           </ul>
-          <p class="text-muted-foreground mb-6 text-sm">
-            In my free time, I paddle for a competitive dragon boat team & join
-            CrossFit. I also love dabbling in home labbing, and experiment with
-            web-dev technology & productivity tools.
-          </p>
-          <div class="flex justify-center">
-            <Link
-              href="mailto:Jotham@cothink.ing"
-              class={buttonVariants({
-                variant: 'secondary',
-              }) + ' group'}
-            >
-              Let's get in touch <span
-                class="ml-1.5 transition-transform group-hover:translate-x-1"
-              >
-                <Icon name="lucide:mail" class="size-4" />
-              </span>
-            </Link>
-          </div>
         </p>
+        <p class="text-muted-foreground mb-6 text-sm">
+          In my free time, I paddle for a competitive dragon boat team & join
+          CrossFit. I also love dabbling in home labbing, and experiment with
+          web-dev technology & productivity tools.
+        </p>
+        <div class="flex justify-center">
+          <Link
+            href="mailto:Jotham@cothink.ing"
+            class={buttonVariants({
+              variant: 'secondary',
+            }) + ' group'}
+          >
+            Let's get in touch <span
+              class="ml-1.5 transition-transform group-hover:translate-x-1"
+            >
+              <Icon name="lucide:mail" class="size-4" />
+            </span>
+          </Link>
+        </div>
       </div>
     </div>
-  </section>
-  <section class="flex flex-col gap-y-4">
-    <h2 class="text-2xl font-medium">Latest posts</h2>
-    <ul class="flex flex-col gap-y-4">
-      {
-        blog.map((post) => (
-          <li>
-            <BlogCard entry={post} />
-          </li>
-        ))
-      }
-    </ul>
-    <div class="flex justify-center">
-      <Link
-        href="/blog"
-        class={buttonVariants({ variant: 'ghost' }) + ' group'}
-      >
-        See all posts <span
-          class="ml-1.5 transition-transform group-hover:translate-x-1"
-          >&rarr;</span
+
+    <section class="mt-16 flex flex-col gap-y-4">
+      <h2 class="text-2xl font-medium">Latest posts</h2>
+      <ul class="flex flex-col gap-y-4">
+        {
+          blog.map((post) => (
+            <li>
+              <BlogCard entry={post} />
+            </li>
+          ))
+        }
+      </ul>
+      <div class="flex justify-center">
+        <Link
+          href="/blog"
+          class={buttonVariants({ variant: 'ghost' }) + ' group'}
         >
-      </Link>
-    </div>
+          See all posts <span
+            class="ml-1.5 transition-transform group-hover:translate-x-1"
+            >&rarr;</span
+          >
+        </Link>
+      </div>
+    </section>
   </section>
 </Layout>
